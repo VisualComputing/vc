@@ -1,5 +1,9 @@
 # Nombres
 
+* Julian David Acosta Bello
+* Santiago Duque
+* Camilo Andres Gil Ballen
+* Santiago Alejandro Morales Pulido
 
 
 ## Bio
