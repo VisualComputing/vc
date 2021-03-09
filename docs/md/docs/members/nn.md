@@ -1,10 +1,9 @@
 # Nombres
 
 * Julian David Acosta Bello
-* Santiago Duque
+* Santiago Duque Bernal
 * Camilo Andres Gil Ballen
 * Santiago Alejandro Morales Pulido
-
 
 ## Bio
 
@@ -15,5 +14,6 @@
 papers, blogs, research, free software...
 
 ## Hobbies
+
 
 > :ToCPrevNext
