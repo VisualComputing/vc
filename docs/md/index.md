@@ -92,6 +92,7 @@ The webpage is to be developed in _markdown_ ([CommonMark](https://spec.commonma
    ```shell
    cd dist/docs/
    Mklink /D sketches ".\..\..\docs\sketches"
+
    ```
 
 6. Deploy to github:
