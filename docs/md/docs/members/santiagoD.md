@@ -1,4 +1,4 @@
-# Julian David Acosta Bello
+# Santiago Duque Bernal
 
 ## Bio
 

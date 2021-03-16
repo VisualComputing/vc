@@ -20,4 +20,7 @@
 
 > :Collapse label=Members
 > 
-> [NN](/docs/members/nn)
+> [Julian David Acosta Bello](/docs/members/julian)
+> [Santiago Duque Bernal](/docs/members/santiagoD)
+> [Camilo Andres Gil Ballen](/docs/members/camilo)
+> [Santiago Alejandro Morales Pulido](/docs/members/santiagoM)
