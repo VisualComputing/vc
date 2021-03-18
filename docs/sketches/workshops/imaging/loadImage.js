@@ -6,6 +6,10 @@ function preload() {
 
 function setup() {
     createCanvas(800, 550);
+    noLoop();
+}
+
+function draw() {
     img.resize(800, 550);
     image(img, 0, 0);
 }
