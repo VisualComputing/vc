@@ -10,7 +10,7 @@ function preload() {
 function setup() {
     createCanvas(800, 550);
     img.resize(800, 550);
-    //noLoop();
+    noLoop();
 }
 
 function draw() {
