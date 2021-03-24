@@ -44,4 +44,8 @@ Grayscale using HSL method at top left, HSV method at top right, CieLAB method a
 
 
 
+#### ASCII Art
+
+> :P5 width = 800, height = 550, sketch = /docs/sketches/workshops/imaging/asciiArt.js
+
 > :ToCPrevNext
