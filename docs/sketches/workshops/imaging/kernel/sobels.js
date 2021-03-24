@@ -36,6 +36,8 @@ function setup() {
 
 function draw() {
 
+    img.loadPixels();
+
     tImg = createImage(img.width, img.height);
     rImg = createImage(img.width, img.height);
     bImg = createImage(img.width, img.height);
@@ -45,7 +47,12 @@ function draw() {
     for (let x = 1; x < img.width; x++) {
         for (let y = 1; y < img.height; y++) {
             let c = convolution(x, y, topS);
-            tImg.set(x, y, c);
+            let index = 4 * (x + img.width * y);
+
+            tImg.pixels[index] = red(c);
+            tImg.pixels[index + 1] = green(c);
+            tImg.pixels[index + 2] = blue(c);
+            tImg.pixels[index + 3] = alpha(c);
         }
     }
     tImg.updatePixels();
@@ -55,7 +62,12 @@ function draw() {
     for (let x = 1; x < img.width; x++) {
         for (let y = 1; y < img.height; y++) {
             let c = convolution(x, y, rigthS);
-            rImg.set(x, y, c);
+            let index = 4 * (x + img.width * y);
+
+            rImg.pixels[index] = red(c);
+            rImg.pixels[index + 1] = green(c);
+            rImg.pixels[index + 2] = blue(c);
+            rImg.pixels[index + 3] = alpha(c);
         }
     }
     rImg.updatePixels();
@@ -66,7 +78,12 @@ function draw() {
     for (let x = 1; x < img.width; x++) {
         for (let y = 1; y < img.height; y++) {
             let c = convolution(x, y, bottomS);
-            bImg.set(x, y, c);
+            let index = 4 * (x + img.width * y);
+
+            bImg.pixels[index] = red(c);
+            bImg.pixels[index + 1] = green(c);
+            bImg.pixels[index + 2] = blue(c);
+            bImg.pixels[index + 3] = alpha(c);
         }
     }
     bImg.updatePixels();
@@ -76,7 +93,12 @@ function draw() {
     for (let x = 1; x < img.width; x++) {
         for (let y = 1; y < img.height; y++) {
             let c = convolution(x, y, leftS);
-            lImg.set(x, y, c);
+            let index = 4 * (x + img.width * y);
+
+            lImg.pixels[index] = red(c);
+            lImg.pixels[index + 1] = green(c);
+            lImg.pixels[index + 2] = blue(c);
+            lImg.pixels[index + 3] = alpha(c);
         }
     }
     lImg.updatePixels();
@@ -92,10 +114,16 @@ function convolution(x, y, matrix) {
         for (ky = -1; ky <= 1; ky++) {
             let xpos = x + kx;
             let ypos = y + ky;
+            let r = 0;
+            let g = 0;
+            let b = 0;
 
-            let r = red(img.get(xpos, ypos));
-            let g = green(img.get(xpos, ypos));
-            let b = blue(img.get(xpos, ypos));
+            if ((xpos >= 0 && xpos < img.width) && (ypos >= 0 || ypos < img.height)) {
+                let index = 4 * (xpos + img.width * ypos);
+                r = img.pixels[index];
+                g = img.pixels[index + 1];
+                b = img.pixels[index + 2];
+            }
 
             rtotal += matrix[kx + 1][ky + 1] * r;
             gtotal += matrix[kx + 1][ky + 1] * g;
