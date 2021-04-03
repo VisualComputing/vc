@@ -41,11 +41,10 @@ Colaboración articulo de Wikipedia : <a href="https://es.wikipedia.org/wiki/Ans
 
  
 
-# Illusion Visual 
-##
+# Ilusión visual 
+## Stepping feet
 
-Adapted from [here](https://p5js.org/examples/structure-recursion.html).
 
-> :P5 sketch=/docs/sketches/scripts/ilussionNicolas.js width=720, height=560
+> :P5 sketch=/docs/sketches/scripts/ilussionElsa.js width=750, height=560
 
 > :ToCPrevNext
