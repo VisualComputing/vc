@@ -1,98 +1,51 @@
-# Elsa Johanna Arias Muñoz
+# Elsa Johanna Arias M.
+
+
+<img src="https://3.bp.blogspot.com/-TxQ4BqN8uWk/WmYubM514aI/AAAAAAAACbQ/mLSaKatSoz8ipYNEnq2srgFPO6RWxE0SQCLcBGAs/s320/bt213.gif" alt="this slowpoke moves"  width=250/>
+
+
+<b>Correo:</b> <a href="mailto:ejariasm@unal.edu.co">ejariasm@unal.edu.co</a> <br>
+<b>Github:</b> <a href="https://github.com/ejariasm">ejariasm</a><br>
 
 ## Bio
 
+Estudiante de ingeniería de sistemas y computación de la Universidad Nacional de Colombia. Con experiencia en manejo de sistemas de información, desarrollo e implementación web, soporte técnico y automatización de procesos. 
+
+Durante mis estudios tuve la oportunidad de practicar diversos tópicos como diseño y desarrollo de software, redes, diseño de bases de datos, algoritmos, inteligencia artificial, y gerencia de proyectos. Habilidades de análisis, resolución de problemas y auto aprendizaje
+
 ## Interests
+
+<ul>
+  <li>Inteligencia artificial y conductual </li>
+  <li>Criptografia</li>
+  <li>Diseño de bases de datos</li>
+</ul>
+
+
+## Hobbies
+
+<ul>
+  <li>Aprendizaje de lenguas. </li>
+  <li>Aprendizaje sobre música.  </li>
+  <li>Aprender a tocar guitarra.</li>
+  <li>Dibujar.</li>
+  <li>Lectura .</li>
+  <li>Videojuegos.</li>
+</ul>
+
 
 # Contributions
 
-papers, blogs, research, free software...
+Colaboración articulo de Wikipedia : <a href="https://es.wikipedia.org/wiki/Anshel_Anshel_Goldfeld">Anshel Anshel Goldfeld</a> <br>
 
-## Hobbies
+
  
 
-# P5 inline code
+# Illusion Visual 
+##
 
 Adapted from [here](https://p5js.org/examples/structure-recursion.html).
 
-> :P5 width=720, height=560
->
-> let opa = 255;
->let radio = 40;
->
->function setup() {
->	var myCanvas = createCanvas(720, 560);
->}
->
->
->function draw() {
->	background(255);
->	illusion();
->}
->
->function illusion() {
->	push();
->	translate( (width / 4) + 50 , height / 2);
->	uno();
->	pop();
->	push();
->	translate( (width / 4) * 3 + 50 , height / 2);
->	dos();
->	pop();
->}  
->
->function uno() {
->	center();
->	var an = (PI / 3);
->	var i;
->	for(i = 0; i < 6; i++){
->		push();
->		translate(p5.Vector.fromAngle(i * an, 3.5 * radio));
->		exterior1();
->		pop();
->	}
->}
->
->function dos() {
->	center();
->	var an = ( 2 * PI / 8);
->	var i;
->	for(i = 0; i < 8; i++){
->		push();
->		translate(p5.Vector.fromAngle(i * an, 2 * radio));
->		exterior2();
->		pop();
->	}
->}
->
->function center(){
->	ellipseMode(RADIUS);
->	noStroke();
->	fill('yellow');
->	ellipse(0,0,radio,radio);
->}
->
->function exterior1(){
->	ellipseMode(RADIUS);
->	noStroke();
->	fill(155, 0, 215, opa);
->	ellipse(0,0,1.5 * radio,1.5 * radio);
->}
->
->function exterior2(){
->	ellipseMode(RADIUS);
->	noStroke();
->	fill(155, 0, 215, opa);
->	ellipse(0,0,0.5 * radio, 0.5 * radio);
->}
->
->function keyPressed() {
->	if (key === '0') {
->	opa = 255;
->	} else if (key === '1') { 
->	opa = 0;
->	}
->}
-
+> :P5 sketch=/docs/sketches/scripts/ilussionNicolas.js width=720, height=560
 
 > :ToCPrevNext
