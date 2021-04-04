@@ -352,6 +352,20 @@ Utilizando este mismo código, cambiando únicamente el kernel por el Top Sobel,
 
 El kernel es un método de procesamiento de imágenes muy versátil, pues no solo sirve para aplicar filtros a las imágenes, sino que también permiten la obtención de carácteristicas de una imagen, facilitando así el estudio de las imagenes, y su aplicación en otras áreas que hacen uso de imágenes. Finalmente, para un trabajo futuro este tema se puede profundizar y desarrollar con la investigación y experimentación sobre cada uno de los filtros y la razón por la cual cada uno de ellos genera el debido efecto.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Mosaic - Images
 ### Original
 
@@ -361,7 +375,26 @@ El kernel es un método de procesamiento de imágenes muy versátil, pues no sol
 
 > :P5 sketch=/docs/sketches/workshops/imaging/mosaic/main.js, width=800, height=640
 
+#### General Explicación
+El mosaico generado consiste en recrear una imagen a partir de pequeñas imágenes, para crear una mayor concordancia las pequeñas imágenes pertenecen a la misma temática de la imagen original, en este caso aves. A continuación, se explica el proceso que permitió la creación de la pieza. 
 
+#### Ideas Primarias
+Las primeras ideas que se plantearon para la creación del mosaico fueron 2 principalmente:
+
+* Primero se determino que la mejor manera para crear el mosaico consistía en dividir la imagen en pequeñas cuadriculas cuyo tamaño fuera una potencia de 2 (por ejemplo, 8x8 o 16x16), una vez se tienen estas cuadriculas se haya el color dominante de cada cuadricula, para esto basto con hallar el promedio de cada uno los canales (trabajando en modo rgb) de los colores de cada uno de los pixeles de la cuadricula, esto permitió obtener un color domínate de cada uno de las cuadriculas. 
+
+* Como segunda idea ya teniendo el color predominante de cada una de las cuadriculas, se planteo el uso de una API que se encargara de proveer imágenes para cada una de las cuadriculas con su respectivo color predominante, este proceso funciono en pequeña escala, pero cuando se intentó realizar el proceso con una imagen de tamaño real, se superaron fácilmente el limite de las API, esto conllevo a descartar esta segunda idea y buscar otras alternativas. 
+
+#### HTML Colores y Distancia Delta
+Dado que era imposible conseguir una imagen para cada uno de los colores, se busco alguna manera de estandarizar la paleta, en esta búsqueda se encontró la lista de colores estándares proveídos por **HTML**, dicha lista esta conformada por 140 colores y representan una abstracción bastante completa de la paleta, con esta lista de colores mucho más reducida se busco una imagen para cada uno de los colores. 
+
+En este punto se tenía 140 imágenes para cada uno los colores estandarizados por HTML, pero los colores predominantes de cada uno de las cuadriculas aún no habían sido estandarizado, para esto se hizo uso del concepto de **distancia delta**, dicha distancia expresa de manera numérica la diferencia entre 2 colores,  es decir si x y z son el mismo color su distancia será cero, con este concepto en mente se tomo un cuadricula cuyo color predomínate es el color **c** y se halló la distancia delta del color c con cada uno de los 140 colores y se selecciono el color con la mejor distancia, se tomó la imagen correspondiente a ese color y se construyó el mosaico.
+
+#### Conclusions & Future Work
+
+* Si bien la distancia delta es una medida efectiva no deja de ser una simple distancia euclidiana, una mejora en el trabajo podría ser trabajar una medida más precisa de acuerdo con el contexto. 
+
+* Si bien la mayoría de APIs en su capa gratuita tienen unos limites bastantes bajos en relación con lo solicitado por el ejercicio, se podría buscar una solución de pago o usar herramientas de scraping para la creación de una podría API. 
 
 ### ASCII Art
 

@@ -22,8 +22,8 @@ function draw() {
 
     let d = pixelDensity();
     
-    let mosaic_part_x =10;
-    let mosaic_part_y =10;
+    let mosaic_part_x =8;
+    let mosaic_part_y =8;
 
     loadPixels();
 

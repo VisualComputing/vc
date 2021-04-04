@@ -4,7 +4,7 @@ let blockSize = 3;
 let count = 500;
 
 function preload() {
-    img = loadImage("/vc/docs/sketches/workshops/imaging/BabyYoda.jpg");
+    img = loadImage("/vc/docs/sketches/workshops/imaging/mosaic/duck.jpg");
 }
 
 function setup() {
