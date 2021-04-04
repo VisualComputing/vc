@@ -17,9 +17,9 @@ Enfoque principal en proyectos universitarios y personales.
 ## Hobbies
 
 * Baloncesto
-* Valorant :v
+* Valorant 
 * Sitcoms
-* Tomar hasta quedar inconsciente
+* Disfrutar con Amigos
 
 ## Ilusión Óptica
 

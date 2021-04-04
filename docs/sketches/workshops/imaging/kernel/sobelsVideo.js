@@ -10,9 +10,13 @@ function preload() {
     fingers = createVideo("/vc/docs/sketches/fingers.webm");
 }
 
+function mousePressed() {
+    fingers.loop(); // set the video to loop and start playing
+}
+
 function setup() {
     createCanvas(320, 240);
-    fingers.loop();
+    //fingers.loop();
     fingers.hide();
     fingers.volume(0);
 }
