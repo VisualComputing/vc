@@ -1,7 +1,7 @@
 # Camilo Andres Gil Ballen
 
 ## Bio
-Nacido en Ubaté Cundinamarca el 24 de Abril de 2000, realizo sus estudios de básica primaria y secundaria en varios colegios debido a la actividad económica de sus padres, pero finalmente los completo en el Colegio Nacionalizado de Samacá en 2016, desde una temprana edad denoto un gusto por diferentes áreas del saber desde la filosofía e historia que lo llevo a participar durante 2 años en la Liga de Debate Colombiana,  hasta las matemáticas y la informática que lo llevo a profundizar en sus últimos 2 años de bachillerato al cursar un programa de Técnico de Sistemas y Computación dictado en su colegio, dicho programa influyo en gran medida en la elección de su carrera. Ingreso a la Universidad Nacional de Colombia sede Bogotá en 2017 a cursar la carrera de Ingeniería de Sistemas y Computación. Gran parte de su vida a estado ligada al deporte, ya que practico durante 5 años futbol en las divisiones inferiores del equipo Patriotas Boyacá, y  durante 1 año atletismo en Instituto de Recreación y Deporte de Tunja. 
+Estudiante de noveno semestre de Ingenieria de Sistemas y Computación de la Universidad Nacional de Colombia sede Bogota.
 
 ## Interests
 * Arquitectura de Software
