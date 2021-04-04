@@ -2,13 +2,26 @@
 
 ## Bio
 
+Nacido En Bogotá el 29 de enero de 2000, completó sus estudios en el Colegio Cafam donde descubrió su gusto en las matemáticas y su interés en la computación junto a sus aplicaciones. Posteriormente, ingresó en el 2017 a la Universidad Nacional de Colombia, donde cursa actualmente noveno semestre de Ingeniería de Sistemas.
+
 ## Interests
+
+* Aprender 
+* Literatura
+* Peliculas y series
+* Videojuegos y Desarrollo de Videojuegos
+* Desarrollo de software
 
 ## Contributions
 
-papers, blogs, research, free software...
+No he realizado ninguna contribución de este tipo, mi trabajo se ha enfocado en proyectos universitarios, y algunos proyectos individuales de aprendizaje.
 
 ## Hobbies
+
+* Jugar videojuegos
+* Leer
+* Aprender idiomas
+* Ver peliculas y series
 
 ## Optical Illusions - Ouchi's Illusion
 
