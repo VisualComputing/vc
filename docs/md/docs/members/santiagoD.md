@@ -1,14 +1,25 @@
 # Santiago Duque Bernal
 
 ## Bio
-
+Estudiante de noveno semestre de la Universidad Nacional de Colombia. Nacido el 1 de Marzo del 2000.
 ## Interests
+
+* Deportes
+* Desarrollo de Software
+* Videojuegos
+* Viajar
+* Criptografía
 
 ## Contributions
 
-papers, blogs, research, free software...
+Enfoque principal en proyectos universitarios y personales.
 
 ## Hobbies
+
+* Baloncesto
+* Valorant :v
+* Sitcoms
+* Tomar hasta quedar inconsciente
 
 ## Ilusión Óptica
 
