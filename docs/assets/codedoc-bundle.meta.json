@@ -111,6 +111,11 @@
       "name": "ConfigTransport",
       "filename": "/home/runner/work/vc/vc/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js",
       "hash": "bIAidu6MCPVPBcGGWLCR6Q=="
+    },
+    {
+      "name": "TabSelector",
+      "filename": "/home/runner/work/vc/vc/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js",
+      "hash": "6jzvkXXQW/pnjrYP6mla2g=="
     }
   ],
   "renderer": {

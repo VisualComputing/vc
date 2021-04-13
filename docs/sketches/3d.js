@@ -1,9 +1,10 @@
 function setup() {
+  console.log("hey: ", windowWidth, windowHeight);
   createCanvas(710, 400, WEBGL);
 }
 
 function draw() {
-  background(250);
+  background(33, 33, 33);
 
   translate(-240, -100, 0);
   normalMaterial();

@@ -1112,23 +1112,12 @@ body.dark code {
 }
   .p5-0-0-17 {
     cursor: pointer;
-    margin: 16px;
     display: inline-block;
-    padding: 8px;
     overflow: hidden;
-    max-width: 820px;
-    transition: box-shadow .3s, transform .3s;
-    border-radius: 4px;
     vertical-align: middle;
   }
-  .p5-0-0-17:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
-  }
   .p5-0-0-17.center {
-    width: 100%;
-    border: 2px solid cyan;
     margin: auto;
-    padding: 3px;
   }
   .p5-0-0-17 img {
     width: calc(100% + 16px);
@@ -1149,3 +1138,165 @@ body.dark code {
     color: #1eb2a6;
   }
 }
+  .tabs-0-0-18 .selector {
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: -8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+  }
+  .tabs-0-0-18 .tab {
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    border-radius: 3px;
+  }
+  .tabs-0-0-18 .tab.first {
+    border-top-left-radius: 0;
+  }
+  body.dark-mode-animate .tabs-0-0-18 .tab {
+    transition: border-color .3s;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .tabs-0-0-18 .tab {
+    border-color: #313131;
+  }
+}
+  body.dark .tabs-0-0-18 .tab {
+    border-color: #313131;
+  }
+  .tabs-0-0-18 .tab:not(.selected) {
+    display: none;
+  }
+  .tabs-0-0-18 .tab>pre:first-child {
+    margin-top: 0;
+  }
+  .tabs-0-0-18 .tab>pre:last-child {
+    margin-bottom: 0;
+  }
+  .tabs-0-0-18 .selector button {
+    color: #424242;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    margin: 0;
+    opacity: 0.35;
+    outline: none;
+    padding: 4px 8px;
+    position: relative;
+    font-size: inherit;
+    min-width: 96px;
+    transform: scale(.9);
+    background: #f5f5f5;
+    font-family: inherit;
+    border-radius: 8px;
+    transform-origin: bottom center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .tabs-0-0-18 .selector button:after {
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    content: ' ';
+    position: absolute;
+    background: #f5f5f5;
+  }
+  .tabs-0-0-18 .selector button:hover {
+    opacity: 1;
+  }
+  .tabs-0-0-18 .selector button.selected {
+    opacity: 1;
+    transform: scale(1);
+  }
+  body.dark-mode-animate .tabs-0-0-18 .selector button {
+    transition: background .3s, border-color .3s, color .3s, opacity .1s, transform .1s;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .tabs-0-0-18 .selector button {
+    color: #eeeeee;
+    background: #212121;
+    border-color: #313131;
+  }
+  body:not(.dark-mode-animate) .tabs-0-0-18 .selector button:after {
+    background: #212121;
+  }
+}
+  body.dark .tabs-0-0-18 .selector button {
+    color: #eeeeee;
+    background: #212121;
+    border-color: #313131;
+  }
+  .tabs-0-0-18 .selector button .icon-font {
+    opacity: 0.5;
+    font-size: 18px;
+    margin-left: 16px;
+    vertical-align: middle;
+  }
+  body.dark .tabs-0-0-18 .selector button:after {
+    background: #212121;
+  }
+  body.dark-mode-animate .tabs-0-0-18 .selector button:after {
+    transition: height .1s, bottom .1s, background .3s;
+  }
+  .tabs-0-0-18 .selector button.selected:after {
+    bottom: -4px;
+    height: 8px;
+  }
+  .formula-0-0-19 {
+    color: #757575;
+    padding: 16px;
+    background: #eeeeee;
+    border-radius: 3px;
+  }
+  body.dark .formula-0-0-19 {
+    color: #cacaca;
+    background: #282828;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .formula-0-0-19 {
+    color: #cacaca;
+    background: #282828;
+  }
+}
+  body.dark-mode-animate .formula-0-0-19 {
+    transition: background .3s, color .3s;
+  }
+  .formula-0-0-19.big {
+    font-size: 32px;
+  }
+  .formula-0-0-19.center > div {
+    text-align: center;
+  }
+  .line-0-0-20 {
+    cursor: pointer;
+    padding: 16px 32px;
+    overflow: auto;
+    position: relative;
+    border-radius: 3px;
+  }
+  .line-0-0-20:hover {
+    background: #e8e8e8;
+  }
+  .line-0-0-20 .counter {
+    top: 0;
+    left: 8px;
+    width: 32px;
+    bottom: 0;
+    display: flex;
+    opacity: 0.5;
+    position: absolute;
+    font-size: 10px;
+    text-align: left;
+    align-items: center;
+  }
+  body.dark .line-0-0-20:hover {
+    background: #323232;
+  }
+@media (prefers-color-scheme: dark) {
+  body:not(.dark-mode-animate) .line-0-0-20:hover {
+    background: #323232;
+  }
+}
+  body.dark-mode-animate .line-0-0-20:hover {
+    transition: background .3s;
+  }
