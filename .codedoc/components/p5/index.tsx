@@ -2,7 +2,6 @@ import { ThemedComponentThis } from "@connectv/jss-theme"; // @see [CONNECTIVE J
 import { RendererLike } from "@connectv/html"; // @see [CONNECTIVE HTML](https://github.com/CONNECT-platform/connective-html)
 import { CodedocTheme } from "@codedoc/core"; // --> Type helper for theme object
 
-// import { P5Style } from "./style"; // @see tab:style.ts
 import { P5Style } from "./style"; // @see tab:style.ts
 import { content } from "../../content";
 import { config } from "../../config";
