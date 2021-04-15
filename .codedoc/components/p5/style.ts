@@ -42,10 +42,6 @@ export const P5Style = themedStyle<CodedocTheme>(theme => ({
           color: theme.dark.primary,
         },
       },
-    },
-
-    '& iframe:fullscreen > *': {
-      transform: 'scale(5)'
     }
   },
 
