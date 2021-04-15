@@ -43,5 +43,24 @@ export const P5Style = themedStyle<CodedocTheme>(theme => ({
         },
       },
     },
+
+    '& iframe:fullscreen > *': {
+      transform: 'scale(5)'
+    }
+  },
+
+  gadget: {
+    position: 'absolute',
+    left: '20.3%',
+    backgroundColor: 'transparent',
+    border: 'none',
+    color: 'rgb(128, 128, 128, 0.8)',
+    padding: '10px 14px',
+    fontSize: '16px',
+    cursor: 'pointer',
+
+    '&:hover': {
+      color: 'rgb(128, 128, 128, 0.5)'
+    }
   }
 }));
