@@ -2,7 +2,7 @@ import { ThemedComponentThis } from "@connectv/jss-theme"; // @see [CONNECTIVE J
 import { RendererLike } from "@connectv/html"; // @see [CONNECTIVE HTML](https://github.com/CONNECT-platform/connective-html)
 import { CodedocTheme } from "@codedoc/core"; // --> Type helper for theme object
 
-import { P5Style } from "./style"; // @see tab:style.ts
+import { P5Style, GadgetStyle } from "./style"; // @see tab:style.ts
 import { content } from "../../content";
 import { config } from "../../config";
 
@@ -81,33 +81,33 @@ export function P5(
     "<script>".concat((<div>{content}</div>)!.textContent!).concat("</script>");
 
   const fullScreen = `(function () {
-    const iframe = document.getElementById('${id}');
-    if (iframe.requestFullscreen) iframe.requestFullscreen();
-    else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen(); /* Safari */
-    else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen(); /* IE11 */
+    let fs = fullscreen();
+    fullscreen(!fs);
   })();
   `;
 
   return (
     <div>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       <iframe
         id={`${id}`} class={`${classes.p5} center`} style={`width: ${width}; height: ${height}`}
         srcdoc={`
         <!DOCTYPE html>
         <html>
           <head>
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' />
+            <style>${GadgetStyle}</style>
             ${libs}
             ${code}
           </head>
           <body>
+            <button id="fullScreen" title='Full Screen' onclick='${fullScreen}'>
+              <i class='fas fa-expand'></i>
+            </button>
           </body>
         </html>
       `}>
       </iframe>
-      <button class={`${classes.gadget} center`} title="Full Screen" onclick={`${fullScreen}`}>
-        <i class="fas fa-expand"></i>
-      </button>
+
     </div>
   );
 }
