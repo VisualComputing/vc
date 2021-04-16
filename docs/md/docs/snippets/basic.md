@@ -2,10 +2,10 @@
 
 Adapted from [here](https://p5js.org/examples/structure-recursion.html).
 
-> :P5 width=720, height=560
+> :P5 width=720, height=560, padding=0
 >
 > function setup() {
->   createCanvas(720, 560);
+>   createCanvas(windowWidth, windowHeight);
 >   noStroke();
 >   noLoop();
 > }
@@ -23,6 +23,9 @@ Adapted from [here](https://p5js.org/examples/structure-recursion.html).
 >     drawCircle(x - radius / 2, radius / 2, level);
 >     drawCircle(x + radius / 2, radius / 2, level);
 >   }
+> }
+> function windowResized() {
+>   resizeCanvas(windowWidth, windowHeight);
 > }
 
 note that the above sketch code is included within the markdown itself like this:
