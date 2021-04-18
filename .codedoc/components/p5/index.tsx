@@ -81,9 +81,46 @@ export function P5(
     "<script>".concat((<div>{content}</div>)!.textContent!).concat("</script>");
 
   const fullScreen = `(function () {
-    let fs = fullscreen();
-    fullscreen(!fs);
+    if (document.fullscreenElement) document.exitFullscreen();
+    else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+    else if (elem.webkitRequestFullscreen) document.documentElement.webkitRequestFullscreen(); /* Safari */
+    else if (document.documentElement.msRequestFullscreen) document.documentElement.msRequestFullscreen(); /* IE11 */
   })();
+  `;
+
+  const windowResized = `
+  <script>  
+    document.addEventListener('fullscreenchange', (event) => {
+      let type;
+      let canvas = document.getElementsByTagName('canvas');
+      if (canvas.length == 0) { canvas = document.getElementsByTagName('video'); type='video' }
+
+      if (document.fullscreenElement) {
+        document.documentElement.style.overflow = 'hidden';
+        if (canvas.length == 1) {
+          c = canvas[0];
+          c.style.position = 'absolute';
+          let fswidth = c.width * window.screen.height / c.height;
+          if(fswidth >= window.screen.width) c.style.width = window.screen.width + 'px';
+          else c.style.width =  fswidth + 'px';
+          c.style.height = window.screen.height + 'px';
+          c.style.left = ((window.screen.width - parseFloat(c.style.width)) / 2) + 'px';
+          c.style.top = '0px';
+          if (typeof draw === "function") draw();
+          if (type == 'video') document.documentElement.style.backgroundColor = 'black';
+        }
+      }
+  
+      else {
+        document.documentElement.style.overflow = 'visible';
+        c.style.width = c.width + 'px';
+        c.style.height = c.height + 'px';
+        if (canvas.length == 1) c.style.position = 'static';
+        if (typeof draw === "function") draw();
+        if (type == 'video') document.documentElement.style.backgroundColor = 'white';
+      }
+    });
+  </script>
   `;
 
   return (
@@ -98,6 +135,7 @@ export function P5(
             <style>${GadgetStyle}</style>
             ${libs}
             ${code}
+            ${windowResized}
           </head>
           <body>
             <button id="fullScreen" title='Full Screen' onclick='${fullScreen}'>
