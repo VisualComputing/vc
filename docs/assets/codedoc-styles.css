@@ -1117,6 +1117,8 @@ body.dark code {
     vertical-align: middle;
   }
   .p5-0-0-17.center {
+    width: 100%;
+    border: 2px solid magenta;
     margin: auto;
   }
   .p5-0-0-17 img {
