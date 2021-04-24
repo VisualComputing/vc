@@ -1,5 +1,5 @@
 function setup() {
-  console.log("hey: ", windowWidth, windowHeight);
+  //console.log(windowWidth, windowHeight); // 730 420
   createCanvas(710, 400, WEBGL);
 }
 
