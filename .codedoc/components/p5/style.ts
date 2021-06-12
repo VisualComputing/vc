@@ -42,6 +42,31 @@ export const P5Style = themedStyle<CodedocTheme>(theme => ({
           color: theme.dark.primary,
         },
       },
-    },
+    }
   }
 }));
+
+export const GadgetStyle = `
+  #fullScreen {
+    position: absolute;
+    background-color: transparent;
+    border:none;
+    color: rgb(128, 128, 128, 0.8);
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline:0;
+    z-index: 100;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  #fullScreen:hover {
+    color: rgb(128, 128, 128, 0.5);
+  }
+`;
